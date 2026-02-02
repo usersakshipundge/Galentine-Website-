@@ -27,6 +27,32 @@ h1 {
   font-size: 1.2rem;
 }
 
+.name-animate {
+  display: inline-block;
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    #ff4d6d,
+    #ffeb3b,
+    #00e5ff,
+    #ff4d6d
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2.5s infinite linear, bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
 .question {
   background: #fff;
   padding: 25px;
