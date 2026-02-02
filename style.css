@@ -150,3 +150,82 @@ button:last-child {
   0% { transform: scale(0); opacity: 1; }
   100% { transform: scale(2.5); opacity: 0; }
 }
+
+.name-animate {
+  display: inline-block;
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    #ff4d6d,
+    #ffeb3b,
+    #00e5ff,
+    #ff4d6d
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2.5s infinite linear;
+  cursor: pointer;
+}
+
+.name-animate:hover {
+  animation: shimmer 2.5s infinite linear, pulse 0.9s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.name-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hearts span {
+  position: absolute;
+  font-size: 14px;
+  animation: floatHeart 3s infinite ease-in-out;
+  opacity: 0.8;
+}
+
+.hearts span:nth-child(1) {
+  left: -18px;
+  top: -10px;
+  animation-delay: 0s;
+}
+
+.hearts span:nth-child(2) {
+  right: -18px;
+  top: 0;
+  animation-delay: 0.6s;
+}
+
+.hearts span:nth-child(3) {
+  left: 10px;
+  bottom: -14px;
+  animation-delay: 1.2s;
+}
+
+.hearts span:nth-child(4) {
+  right: 8px;
+  bottom: -18px;
+  animation-delay: 1.8s;
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-10px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+}
+
