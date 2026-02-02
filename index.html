@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galentine Date Proposal 💕</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Hey Daksha 💖</h1>
+    <p class="subtitle">This is a very serious Galentine proposal.</p>
+
+    <!-- Question 1 -->
+    <div class="question">
+      <h2>1. Hello 👋 What is that ONE memory that makes us laugh super hard?</h2>
+      <p class="hint">Hint: we fell down pretty hard that day 💀</p>
+      <input type="text" placeholder="Type your answer here..." />
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+      <h2>2. When will I get to be called <span>Maasi</span>? 👀</h2>
+      <input type="text" placeholder="Waiting patiently..." />
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question">
+      <h2>3. Galentine Date? 💐</h2>
+      <div class="options">
+        <button onclick="selectNo()">No ❌</button>
+        <button onclick="selectYes()">YES 💖</button>
+      </div>
+      <p id="error"></p>
+    </div>
+  </div>
+
+  <!-- Celebration Screen -->
+  <div id="celebration">
+    <h1>🎆 Bestfriend upgraded to Sisterhood for Life 🎆</h1>
+    <p>Galentine Date: CONFIRMED 💕</p>
+    <div class="fireworks"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
